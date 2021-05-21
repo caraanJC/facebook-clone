@@ -45,7 +45,7 @@ const Header = () => {
       <div className='header__right'>
         <div className='header__info'>
           <Avatar />
-          <h4>caraanJC</h4>
+          <h4>Earl Hansen</h4>
         </div>
         <IconButton>
           <AddIcon />

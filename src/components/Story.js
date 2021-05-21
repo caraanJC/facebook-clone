@@ -4,7 +4,12 @@ import './Story.css'
 
 const Story = ({ image, profileSrc, title }) => {
   return (
-    <div style={{ backgroundImage: `url(${image})` }} className='story'>
+    <div
+      style={{
+        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(${image})`,
+      }}
+      className='story'
+    >
       <Avatar src={profileSrc} className='story__avatar' />
       <h4>{title}</h4>
     </div>

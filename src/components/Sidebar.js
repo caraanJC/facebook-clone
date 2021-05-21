@@ -14,8 +14,8 @@ const Sidebar = () => {
   return (
     <div className='sidebar'>
       <SidebarRow
-        src='https://randomuser.me/api/portraits/men/15.jpg'
-        title='Random Guy'
+        src='https://randomuser.me/api/portraits/men/45.jpg'
+        title='Earl Hansen'
       />
       <SidebarRow
         Icon={LocalHospitalIcon}
