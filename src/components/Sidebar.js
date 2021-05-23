@@ -9,14 +9,13 @@ import PeopleIcon from '@material-ui/icons/People'
 import ChatIcon from '@material-ui/icons/Chat'
 import StorefrontIcon from '@material-ui/icons/Storefront'
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary'
+import { useStateValue } from './StateProvider'
 
 const Sidebar = () => {
+  const [{ user, dispatch }] = useStateValue()
   return (
     <div className='sidebar'>
-      <SidebarRow
-        src='https://randomuser.me/api/portraits/men/45.jpg'
-        title='Earl Hansen'
-      />
+      <SidebarRow src={user.photoURL} title={user.displayName} />
       <SidebarRow
         Icon={LocalHospitalIcon}
         title='COVID-19 Information Center'
